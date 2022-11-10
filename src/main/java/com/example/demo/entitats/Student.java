@@ -1,4 +1,4 @@
-package entitats;
+package com.example.demo.entitats;
 
 import java.time.LocalDate;
 

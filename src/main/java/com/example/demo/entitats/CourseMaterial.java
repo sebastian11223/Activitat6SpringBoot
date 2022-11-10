@@ -1,4 +1,4 @@
-package entitats;
+package com.example.demo.entitats;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,6 +12,8 @@ import javax.persistence.Table;
 public class CourseMaterial {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+	//el material és d'un curs o de cap 0.1 
 	@OneToOne
 	private Course course;
 	

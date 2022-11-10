@@ -1,13 +1,11 @@
-package Repo;
-
+package com.example.demo.repositoris;
 import java.util.List;
 
 import javax.persistence.Id;
 
 import org.springframework.data.repository.CrudRepository;
 
-import entitats.Course;
-
+import com.example.demo.entitats.*;
 
 
 public interface Repositoris extends CrudRepository<Course, Id>{

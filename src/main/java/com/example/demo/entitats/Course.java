@@ -9,23 +9,13 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Course")
 public class Course {
+	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id; 
+	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private String title;
 
-	
-	public Course(int id, String title) {
-		super();
-		this.id = id;
-		this.title = title;
-	}
-
-
-	@Override
-	public String toString() {
-		return "Course [id=" + id + ", title=" + title + "]";
-	}
 
 
 	public int getId() {
@@ -40,6 +30,18 @@ public class Course {
 	public void setTitle(String title) {
 		this.title = title;
 	}
+
+	public Course(int id, String title) {
+		super();
+		this.id = id;
+		this.title = title;
+	}
+	public Course() {
+		super();
+		
+	}
+
+	
 	
 	
 	

@@ -12,6 +12,7 @@ import javax.persistence.Table;
 @Table(name = "Student")
 public class Student {
 	@Id
+	private int id;
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private String lastName;
 	private String firsttName;
@@ -20,6 +21,13 @@ public class Student {
 	
 	
 	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getLastName() {
 		return lastName;
 	}
@@ -45,8 +53,9 @@ public class Student {
 		this.wantsNewsletter = wantsNewsletter;
 	}
 	
-	public Student(String lastName, String firsttName, LocalDate birthDate, boolean wantsNewsletter) {
+	public Student(int id , String lastName, String firsttName, LocalDate birthDate, boolean wantsNewsletter) {
 		super();
+		this.id = id;
 		this.lastName = lastName;
 		this.firsttName = firsttName;
 		this.birthDate = birthDate;

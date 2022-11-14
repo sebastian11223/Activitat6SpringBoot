@@ -9,6 +9,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "CourseMaterial")
 public class CourseMaterial {
+	
+	
 	@Id
 	private int id; 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -51,7 +53,10 @@ public class CourseMaterial {
 		this.course = course;
 		this.url = url;
 	}
-
+	
+	public CourseMaterial() {
+		super();
+	}
 	
 	
 	

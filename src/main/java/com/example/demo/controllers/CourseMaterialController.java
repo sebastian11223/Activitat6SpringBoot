@@ -20,13 +20,13 @@ public class CourseMaterialController {
 		@Autowired    
 		RepoCourseMaterial MaterialCourseRepo; 
 		
-		@GetMapping("cursos/{id}")
+		@GetMapping("cursosmaterial/{id}")
 		public CourseMaterial getCourse(@PathVariable int id) {
 			
 			return MaterialCourseRepo.findById(id);
 		}
 		
-		@GetMapping("cursos")
+		@GetMapping("cursosmaterial")
 		public Iterable<CourseMaterial> getTitle() {
 			
 			return MaterialCourseRepo.findAll();

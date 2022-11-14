@@ -19,7 +19,7 @@ public class CourseController {
 	@Autowired    
 	Repositoris CourseRepo; 
 	
-	@GetMapping("curs/{id}")
+	@GetMapping("cursos/{id}")
 	public Course getCourse(@PathVariable int id) {
 		
 		return CourseRepo.findById(id);

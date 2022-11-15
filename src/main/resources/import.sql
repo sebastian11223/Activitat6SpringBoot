@@ -15,5 +15,6 @@ insert into Course_Material (id, url,COURSE_ID) values (3, 'PC',1);
 insert into Course_Material (id, url,COURSE_ID) values (4, 'RATOLI',4);
 insert into Course_Material (id, url,COURSE_ID) values (5, 'EXTRA',3);
 
+insert into Course_Material (id, url,COURSE_ID) values (6, 'SinAsignarAUnCurso',null);
 
 

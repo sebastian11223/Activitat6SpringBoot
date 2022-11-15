@@ -3,8 +3,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "CourseMaterial")
@@ -16,7 +19,9 @@ public class CourseMaterial {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
 	//el material és d'un curs o de cap 0.1 
-	@OneToOne
+//	@OneToOne
+	@ManyToOne(optional = false)
+	@JsonIgnore
 	private Course course;
 	
 	private String url;
